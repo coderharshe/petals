@@ -237,6 +237,7 @@ div.wc-block-add-to-cart-form.wc-block-add-to-cart-form--stepper .wc-block-compo
 
 div.wc-block-add-to-cart-form.wc-block-add-to-cart-form--stepper .wc-block-components-quantity-selector input[type=number].input-text.qty.text {
     -moz-appearance: textfield;
+    appearance: textfield;
     border: unset;
     font-size: var(--wp--preset--font-size--small);
     margin: 0;
@@ -5568,6 +5569,8 @@ svg:not(:root) {
     transform: translateY(-50%);
     -moz-osx-font-smoothing: inherit;
     -webkit-appearance: none;
+    appearance: none;
+    ;
     -webkit-font-smoothing: inherit
 }
 
@@ -7828,7 +7831,7 @@ p.demo_store a {
 
 .woocommerce .woocommerce-customer-details .woocommerce-customer-details--phone::before {
     font-family: WooCommerce;
-    speak: never;
+    /* speak: never; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -7844,7 +7847,7 @@ p.demo_store a {
 
 .woocommerce .woocommerce-customer-details .woocommerce-customer-details--email::before {
     font-family: WooCommerce;
-    speak: never;
+    /* speak: never; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -7887,7 +7890,7 @@ p.demo_store a {
 
 .woocommerce .woocommerce-widget-layered-nav-list .woocommerce-widget-layered-nav-list__item--chosen a::before {
     font-family: WooCommerce;
-    speak: never;
+    /* speak: never; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -7924,7 +7927,7 @@ p.demo_store a {
 
 .woocommerce .widget_layered_nav_filters ul li a::before {
     font-family: WooCommerce;
-    speak: never;
+    /* speak: never; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -8040,7 +8043,7 @@ p.demo_store a {
 
 .woocommerce .widget_rating_filter ul li.chosen a::before {
     font-family: WooCommerce;
-    speak: never;
+    /* speak: never; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -8463,7 +8466,7 @@ p.demo_store a {
 
 .woocommerce-account ul.digital-downloads li::before {
     font-family: WooCommerce;
-    speak: never;
+    /* speak: never; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -8582,7 +8585,7 @@ p.demo_store a {
 .woocommerce-cart .cart-collaterals .shipping-calculator-button::after,
 .woocommerce-checkout .cart-collaterals .shipping-calculator-button::after {
     font-family: WooCommerce;
-    speak: never;
+    /* speak: never; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -11038,7 +11041,7 @@ a[class*=tec-events-elementor-event-widget] {
     border: 2px solid #fff;
     -webkit-box-shadow: var(--wvs-item-box-shadow, 0 0 0 1px #a8a8a8);
     box-shadow: var(--wvs-item-box-shadow, 0 0 0 1px #a8a8a8);
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     height: 20px;
     margin: 0 4px;
@@ -13174,12 +13177,12 @@ ul.products li.product .tinvwl_add_to_wishlist_button {
 }
 
 .tinv-wishlist .tinv-next {
-    display: inline-block;
+    /* display: inline-block; */
     float: left
 }
 
 .tinv-wishlist .tinv-prev {
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     margin-right: 35px !important
 }
@@ -15459,7 +15462,7 @@ table.compare-list .bundled_product:before {
 }
 
 table.compare-list .bundled_product .bundled_product_images {
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
 }
 
@@ -23617,7 +23620,7 @@ body.rtl .elementor-3828 .elementor-element.elementor-element-f35e467 {
     font-family: "Regalia Icons";
     font-style: normal;
     font-weight: normal;
-    speak: never;
+    /* speak: never; */
 
     display: inline-block;
     text-decoration: inherit;
@@ -25207,7 +25210,7 @@ body.rtl .elementor-3828 .elementor-element.elementor-element-f35e467 {
     font-family: "Ext Icons";
     font-style: normal;
     font-weight: normal;
-    speak: never;
+    /* speak: never; */
 
     display: inline-block;
     text-decoration: inherit;
@@ -25389,7 +25392,7 @@ body.rtl .elementor-3828 .elementor-element.elementor-element-f35e467 {
     font-family: "wdt-ext-icon";
     font-style: normal;
     font-weight: normal;
-    speak: never;
+    /* speak: never; */
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
