@@ -277,23 +277,31 @@ div.wc-block-add-to-cart-form.wc-block-add-to-cart-form--stepper .wc-block-compo
 .wc-block-product-filter-price-slider__left {
     grid-area: left-input;
     -ms-grid-column: 1;
-    -ms-grid-row: 2
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2
 }
 
 .wc-block-product-filter-price-slider__content--inline>.wc-block-product-filter-price-slider__left {
     -ms-grid-column: 1;
-    -ms-grid-row: 1
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1
 }
 
 .wc-block-product-filter-price-slider__right {
     grid-area: right-input;
     -ms-grid-column: 5;
-    -ms-grid-row: 2
+    grid-column: 5;
+    -ms-grid-row: 2;
+    grid-row: 2
 }
 
 .wc-block-product-filter-price-slider__content--inline>.wc-block-product-filter-price-slider__right {
     -ms-grid-column: 3;
-    -ms-grid-row: 1
+    grid-column: 3;
+    -ms-grid-row: 1;
+    grid-row: 1
 }
 
 .wc-block-product-filter-price-slider__range {
@@ -310,7 +318,9 @@ div.wc-block-add-to-cart-form.wc-block-add-to-cart-form--stepper .wc-block-compo
     flex-grow: 1;
     grid-area: price-slider;
     -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 1;
+    grid-row: 1;
     height: 4px;
     margin: 15px 0;
     outline: none;
@@ -321,7 +331,9 @@ div.wc-block-add-to-cart-form.wc-block-add-to-cart-form--stepper .wc-block-compo
 .wc-block-product-filter-price-slider__content--inline>.wc-block-product-filter-price-slider__range {
     -ms-grid-column-span: 1;
     -ms-grid-column: 2;
-    -ms-grid-row: 1
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1
 }
 
 .rtl .wc-block-product-filter-price-slider__range {
@@ -1854,7 +1866,7 @@ form.submitting .wpcf7-spinner {
     display: block;
     height: 30px;
     opacity: .5;
-    -ms-filter: "alpha(opacity=50)";
+    /* -ms-filter: "alpha(opacity=50)"; */
     outline: medium none;
     overflow: hidden;
     padding: 0;
@@ -1916,7 +1928,7 @@ form.submitting .wpcf7-spinner {
 .xdsoft_datetimepicker .xdsoft_next:hover,
 .xdsoft_datetimepicker .xdsoft_prev:hover {
     opacity: 1;
-    -ms-filter: "alpha(opacity=100)"
+    /* -ms-filter: "alpha(opacity=100)" */
 }
 
 .xdsoft_datetimepicker .xdsoft_label {
@@ -2060,13 +2072,13 @@ form.submitting .wpcf7-spinner {
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled,
 .xdsoft_datetimepicker .xdsoft_time_box>div>div.xdsoft_disabled {
     opacity: .5;
-    -ms-filter: "alpha(opacity=50)";
+    /* -ms-filter: "alpha(opacity=50)"; */
     cursor: default
 }
 
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled {
     opacity: .2;
-    -ms-filter: "alpha(opacity=20)"
+    /* -ms-filter: "alpha(opacity=20)" */
 }
 
 .xdsoft_datetimepicker .xdsoft_calendar td:hover,
@@ -11800,7 +11812,7 @@ html.yith-quick-view-is-open.yith-quick-view-on-mobile .select2-container.select
     /* -webkit-transform: translateY(20%); */
     -moz-transform: translateY(20%);
     -ms-transform: translateY(20%);
-    /* transform: translateY(20%); */
+    transform: translateY(20%);
     opacity: 0;
     height: 100%;
     -webkit-transition: all 0.3s;
@@ -12363,7 +12375,7 @@ div#brands_a_z a.top {
 
 .ftinvwl {
     font-family: "tinvwl-webfont" !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -12631,7 +12643,7 @@ a.sidr-class-wishlist_products_counter.sidr-class-top_wishlist-heart:before {
     content: "\e909";
     display: inline-block;
     font-family: tinvwl-webfont !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -12653,7 +12665,7 @@ a.sidr-class-wishlist_products_counter.sidr-class-top_wishlist-heart-plus:before
     content: "\e906";
     display: inline-block;
     font-family: tinvwl-webfont !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -13223,6 +13235,7 @@ ul.products li.product .tinvwl_add_to_wishlist_button {
     z-index: 9999;
     outline: 0 !important;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     visibility: hidden;
     opacity: 0;
     text-align: left
@@ -13503,7 +13516,7 @@ ul.products li.product .tinvwl_add_to_wishlist_button {
     width: 46px;
     height: 46px;
     font-family: tinvwl-webfont !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -13519,7 +13532,7 @@ ul.products li.product .tinvwl_add_to_wishlist_button {
     width: 46px;
     height: 46px;
     font-family: tinvwl-webfont !important;
-    speak: none;
+    /* speak: none; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -19568,6 +19581,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-virtual .swiper-slide {
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transform: translateZ(0)
 }
 
@@ -19856,6 +19870,7 @@ button.swiper-pagination-bullet {
     border-radius: var(--swiper-scrollbar-border-radius, 10px);
     position: relative;
     -ms-touch-action: none;
+    touch-action: none;
     background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1))
 }
 
@@ -20830,6 +20845,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-virtual .swiper-slide {
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transform: translateZ(0)
 }
 
@@ -21118,6 +21134,7 @@ button.swiper-pagination-bullet {
     border-radius: var(--swiper-scrollbar-border-radius, 10px);
     position: relative;
     -ms-touch-action: none;
+    touch-action: none;
     background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1))
 }
 
@@ -38891,6 +38908,7 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__image i
 .wdt-events-holder .wdt-column-wrapper .wdt-event-item .wdt-event-content-wrapper p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -44882,6 +44900,7 @@ span.wishlist_products_counter_number:empty {
     padding: 0;
 
     -webkit-perspective: 1000;
+    perspective: 1000px;
 }
 
 ul.bxslider {
@@ -44893,6 +44912,7 @@ ul.bxslider {
     -ms-transform: translateZ(0);
     -webkit-transform: translateZ(0);
     -o-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 /* --- End of jquery.bxslider.css --- */
@@ -48411,6 +48431,7 @@ span.wishlist_products_counter_number:empty {
     position: fixed;
     outline: none !important;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -48524,6 +48545,7 @@ button.mfp-arrow {
     background: transparent;
     border: 0;
     -webkit-appearance: none;
+    appearance: none;
     display: block;
     outline: none;
     padding: 0;
@@ -56147,6 +56169,7 @@ body[class*="woocommerce"] .yith-wcqv-wrapper #yith-quick-view-close:hover::afte
     outline: 0;
     box-shadow: none;
     -webkit-appearance: textfield;
+    appearance: textfield;
 }
 
 .select2-container--default .select2-results>.select2-results__options {
@@ -62727,6 +62750,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-virtual .swiper-slide {
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transform: translateZ(0)
 }
 
@@ -63015,6 +63039,7 @@ button.swiper-pagination-bullet {
     border-radius: var(--swiper-scrollbar-border-radius, 10px);
     position: relative;
     -ms-touch-action: none;
+    touch-action: none;
     background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, .1))
 }
 
@@ -63782,6 +63807,7 @@ swiper-container .swiper-notification {
     position: fixed;
     outline: none !important;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -63895,6 +63921,7 @@ button.mfp-arrow {
     background: transparent;
     border: 0;
     -webkit-appearance: none;
+    appearance: none;
     display: block;
     outline: none;
     padding: 0;
@@ -66610,6 +66637,7 @@ body:not(.rtl) .elementor-4240 .elementor-element.elementor-element-0b4ab19 .ele
     position: fixed;
     outline: none !important;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -66723,6 +66751,7 @@ button.mfp-arrow {
     background: transparent;
     border: 0;
     -webkit-appearance: none;
+    appearance: none;
     display: block;
     outline: none;
     padding: 0;
