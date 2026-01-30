@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,7 @@
 	<title>Petals &#8211; Your SUPER-powered WP Engine Site</title>
 	<meta name='robots' content='noindex, nofollow' />
 
-	<link rel='dns-prefetch' href="..///fonts.googleapis.com" />
+	<link rel='dns-prefetch' href="https://fonts.googleapis.com" />
 	<link rel="alternate" type="application/rss+xml" title="Petals &raquo; Feed"
 		href="https://wdtregalia.wpengine.com/feed/" />
 	<link rel="alternate" type="application/rss+xml" title="Petals &raquo; Comments Feed"
@@ -82,14 +83,117 @@
 		content="https://wdtregalia.wpengine.com/wp-content/uploads/2024/03/favicon-regalia.png" />
 	<link rel='stylesheet' href="../css/style.css" type='text/css' media='all' />
 	<link rel='stylesheet' href="../css/cleaned_styles.css" type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-3884-css'
-		href='https://wdtregalia.wpengine.com/wp-content/uploads/elementor/css/post-3884.css?ver=1749708394'
-		type='text/css' media='all' />
+	<style id="header-custom-css">
+		/* Ensure Header is Full Width and remove gaps */
+		#header .elementor-container {
+			max-width: 100% !important;
+			width: 100% !important;
+			padding: 0 40px !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: space-between !important;
+		}
 
+		/* Logo - Left */
+		#header .elementor-container>.elementor-column:first-child {
+			flex: 0 0 auto !important;
+			width: auto !important;
+		}
+
+		/* Navigation - Center */
+		#header .elementor-container>.elementor-column:nth-child(2) {
+			flex: 1 1 auto !important;
+			width: auto !important;
+			display: flex !important;
+			justify-content: center !important;
+		}
+
+		/* Icons - Right */
+		#header .elementor-container>.elementor-column:last-child {
+			margin-left: auto !important;
+			display: flex !important;
+			justify-content: flex-end !important;
+			align-items: center !important;
+			gap: 20px !important;
+		}
+
+		/* Search Bar Styling */
+		#header .search-item {
+			min-width: 250px !important;
+		}
+
+		#header .wdt-search-form-container {
+			position: relative !important;
+			display: block !important;
+			visibility: visible !important;
+			opacity: 1 !important;
+			width: 100% !important;
+			background: transparent !important;
+			padding: 0 !important;
+		}
+
+		#header .wdt-search-form-container form {
+			display: flex !important;
+			align-items: center !important;
+			background: rgba(255, 255, 255, 0.1) !important;
+			border-radius: 5px !important;
+			padding: 5px 15px !important;
+		}
+
+		#header .wdt-search-form-container input.text_input {
+			background: transparent !important;
+			color: #fff !important;
+			border: none !important;
+			padding: 8px !important;
+			width: 100% !important;
+		}
+
+		#header .wdt-search-form-container input[type="submit"] {
+			background: transparent !important;
+			color: #fff !important;
+			border: none !important;
+			cursor: pointer !important;
+		}
+
+		#header .wdt-search-icon {
+			display: none !important;
+		}
+
+		/* Fix Navigation Alignment */
+		#header .wdt-primary-nav {
+			display: flex !important;
+			justify-content: center !important;
+			width: 100% !important;
+		}
+
+		#header .wdt-primary-nav>li {
+			padding: 0 15px !important;
+		}
+
+		#header .wdt-header-icons-list {
+			display: flex !important;
+			align-items: center !important;
+			gap: 15px !important;
+		}
+
+		#header .wdt-header-icons-list-item {
+			margin: 0 !important;
+			display: flex !important;
+			align-items: center !important;
+		}
+
+		/* Ensure no weird margins on columns */
+		#header .elementor-widget-wrap {
+			padding: 0 !important;
+			display: flex !important;
+			align-items: center !important;
+		}
+	</style>
 </head>
+
 <body
 	class="home wp-singular page-template page-template-elementor_header_footer page page-id-3828 wp-custom-logo wp-theme-regalia theme-regalia has-go-to-top regalia-plus-1.0.2 regalia-pro-1.0.0 woocommerce-no-js tribe-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-regalia wvs-show-label wvs-tooltip tinvwl-theme-style elementor-default elementor-template-full-width elementor-kit-13 elementor-page elementor-page-3828">
-	
+
 	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 	<!-- **Wrapper** -->
 	<div class="wrapper">
@@ -99,96 +203,159 @@
 			<div id="header-wrapper" class="header-top-relative">
 				<!-- **Header** -->
 				<header id="header">
-					<style>
-						/* Custom Header Alignment Fix */
-						#header .elementor-container {
-							display: flex !important;
-							justify-content: space-between !important;
-							align-items: center !important;
-							flex-wrap: nowrap !important;
-						}
-
-						#header .elementor-column {
-							width: auto !important;
-							min-width: fit-content !important;
-						}
-
-						/* Logo - Left */
-						#header .elementor-container>.elementor-column:first-child {
-							flex: 0 0 auto !important;
-							margin-right: auto !important;
-						}
-
-						/* Menu - Center */
-						#header .elementor-container>.elementor-column:nth-child(2) {
-							flex: 1 1 auto !important;
-							display: flex !important;
-							justify-content: center !important;
-						}
-
-						/* Icons - Right */
-						#header .elementor-container>.elementor-column:last-child {
-							flex: 0 0 auto !important;
-							display: flex !important;
-							justify-content: flex-end !important;
-						}
-
-						/* Fix Navigation Alignment */
-						#header .wdt-primary-nav {
-							display: flex !important;
-							justify-content: center !important;
-							width: 100% !important;
-							gap: 30px !important;
-						}
-
-						/* Ensure no weird margins on columns */
-						#header .elementor-widget-wrap {
-							padding: 0 !important;
-							display: flex !important;
-							align-items: center !important;
-						}
-					</style>
 					<div class="wdt-elementor-container-fluid">
-						<div id="header-3884" class="wdt-header-tpl header-3884">
-							<div data-elementor-type="wp-post" data-elementor-id="3884"
-								class="elementor elementor-3884">
+						<div id="header-3877" class="wdt-header-tpl header-3877">
+							<div data-elementor-type="wp-post" data-elementor-id="3877"
+								class="elementor elementor-3877">
 								<section
-									class="elementor-section elementor-top-section elementor-element elementor-element-e7ba9d5 wdt-dark-bg elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-									data-id="e7ba9d5" data-element_type="section"
-									data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
+									class="elementor-section elementor-top-section elementor-element elementor-element-27861ad wdt-header-with-topbar elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+									data-id="27861ad" data-element_type="section"
+									data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
 									<div class="elementor-container elementor-column-gap-no">
-										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d1808b5"
-											data-id="d1808b5" data-element_type="column">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8b1efa3"
+											data-id="8b1efa3" data-element_type="column">
 											<div class="elementor-widget-wrap elementor-element-populated">
 												<section
-													class="elementor-section elementor-inner-section elementor-element elementor-element-15cbb84 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
-													data-id="15cbb84" data-element_type="section"
-													data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
+													class="elementor-section elementor-inner-section elementor-element elementor-element-db7f18e elementor-section-content-middle elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+													data-id="db7f18e" data-element_type="section"
+													data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
 													<div class="elementor-container elementor-column-gap-no">
-														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-da2ac45"
-															data-id="da2ac45" data-element_type="column">
+														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4a18463"
+															data-id="4a18463" data-element_type="column">
 															<div
 																class="elementor-widget-wrap elementor-element-populated">
-																<div class="elementor-element elementor-element-c0aeefc elementor-widget__width-initial elementor-align-left elementor-widget elementor-widget-wdt-logo"
-																	data-id="c0aeefc" data-element_type="widget"
+																<div class="elementor-element elementor-element-a7f9bfa elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+																	data-id="a7f9bfa" data-element_type="widget"
 																	data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																	data-widget_type="wdt-logo.default">
+																	data-widget_type="icon-list.default">
 																	<div class="elementor-widget-container">
-																		<div id="regalia-c0aeefc"
-																			class="wdt-logo-container"> <a href="../index.html"
-																				rel="home"><img
-																					src="https://wdtregalia.wpengine.com/wp-content/themes/regalia/assets/images/light-logo.svg"
-																					alt="Regalia Site" /></a></div>
+																		<ul
+																			class="elementor-icon-list-items elementor-inline-items">
+																			<li
+																				class="elementor-icon-list-item elementor-inline-item">
+																				<span
+																					class="elementor-icon-list-text">Monday
+																					- Friday</span>
+																			</li>
+																			<li
+																				class="elementor-icon-list-item elementor-inline-item">
+																				<span
+																					class="elementor-icon-list-text">09:00
+																					AM - 11:00PM</span>
+																			</li>
+																		</ul>
 																	</div>
 																</div>
 															</div>
 														</div>
-														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0b9af39 elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile"
-															data-id="0b9af39" data-element_type="column">
+														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a1897c4 elementor-hidden-mobile"
+															data-id="a1897c4" data-element_type="column">
 															<div
 																class="elementor-widget-wrap elementor-element-populated">
-																<div class="elementor-element elementor-element-ffb1b1c elementor-widget__width-initial wdt-home2-menu elementor-widget elementor-widget-wdt-header-menu"
-																	data-id="ffb1b1c" data-element_type="widget"
+																<div class="elementor-element elementor-element-b816198 wdt-custom-header-animation-text elementor-invisible elementor-widget elementor-widget-wdt-animation"
+																	data-id="b816198" data-element_type="widget"
+																	data-settings="{&quot;wdt_mqa_direction&quot;:&quot;right-to-left&quot;,&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
+																	data-widget_type="wdt-animation.default">
+																	<div class="elementor-widget-container">
+																		<div class="wdt-animation-holder "
+																			id="wdt-animation-b816198"
+																			data-settings="{&quot;direction&quot;:&quot;right-to-left&quot;}">
+																			<div class="wdt-animation-wrapper">
+																				<div
+																					class="wdt-animation-main-marqee right-to-left">
+																					<div
+																						class="wdt-animation-item text-item">
+																						25% Offer New Client use code :
+																						NEW2469</div>
+																					<div
+																						class="wdt-animation-item text-item">
+																						20% Offer Portrait code :
+																						PORT456</div>
+																					<div
+																						class="wdt-animation-item text-item">
+																						25% Offer On Oil Painting use
+																						code : OIL67</div>
+																					<div
+																						class="wdt-animation-item text-item">
+																						10% Offer On Canvas Painting use
+																						code : CAN35</div>
+																				</div>
+																				<div
+																					class="wdt-animation-cloned-marqee">
+																					<div
+																						class="wdt-animation-item text-item">
+																						25% Offer New Client use code :
+																						NEW2469</div>
+																					<div
+																						class="wdt-animation-item text-item">
+																						20% Offer Portrait code :
+																						PORT456</div>
+																					<div
+																						class="wdt-animation-item text-item">
+																						25% Offer On Oil Painting use
+																						code : OIL67</div>
+																					<div
+																						class="wdt-animation-item text-item">
+																						10% Offer On Canvas Painting use
+																						code : CAN35</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a4713b8"
+															data-id="a4713b8" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-92693cb elementor-icon-list--layout-inline elementor-align-right wdt-custom-hover-color-dark-bg elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+																	data-id="92693cb" data-element_type="widget"
+																	data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
+																	data-widget_type="icon-list.default">
+																	<div class="elementor-widget-container">
+																		<ul
+																			class="elementor-icon-list-items elementor-inline-items">
+																			<li
+																				class="elementor-icon-list-item elementor-inline-item">
+																				<a href="../pages/faq.html">
+																					<span
+																						class="elementor-icon-list-text">Faq</span>
+																				</a>
+																			</li>
+																			<li
+																				class="elementor-icon-list-item elementor-inline-item">
+																				<a href="../pages/contact.html">
+																					<span
+																						class="elementor-icon-list-text">Contact</span>
+																				</a>
+																			</li>
+																			<li
+																				class="elementor-icon-list-item elementor-inline-item">
+																				<a href="../pages/about.html">
+																					<span
+																						class="elementor-icon-list-text">About
+																						Us</span>
+																				</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</section>
+												<section
+													class="elementor-section elementor-inner-section elementor-element elementor-element-7b1f363 elementor-section-content-middle elementor-reverse-mobile_extra elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+													data-id="7b1f363" data-element_type="section"
+													data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
+													<div class="elementor-container elementor-column-gap-no">
+														<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-990433b"
+															data-id="990433b" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-59b2517 elementor-widget__width-initial elementor-widget-tablet_extra__width-inherit elementor-widget-mobile_extra__width-auto elementor-widget elementor-widget-wdt-header-menu"
+																	data-id="59b2517" data-element_type="widget"
 																	data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
 																	data-widget_type="wdt-header-menu.default">
 																	<div class="elementor-widget-container">
@@ -205,176 +372,14 @@
 																						<a href="../index.html"><span
 																								data-text="Home">Home</span></a>
 																					</li>
-																					<li <li
+
+																					<li
 																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4028 menu-item-depth-0">
 																						<a href="../pages/about.html"><span
 																								data-text="About">About</span></a>
 																					</li>
-																					<li
-																						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4029 menu-item-depth-0">
-																						<a href="./blog.html"><span
-																								data-text="Blog">Blog</span></a>
-																						<ul class="sub-menu is-hidden">
-																							<li class="close-nav"><a
-																									href="javascript:void(0);"></a>
-																							</li>
-																							<li class="go-back"><a
-																									href="javascript:void(0);"></a>
-																							</li>
-																							<li class="see-all"></li>
-																							<li
-																								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4114 menu-item-depth-1">
-																								<a href="#"><span
-																										data-text="Blog Grid Style">Blog
-																										Grid
-																										Style</span></a>
-																								<ul
-																									class="sub-menu is-hidden">
-																									<li
-																										class="close-nav">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="go-back">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="see-all">
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4113 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Left Sidebar">Left
-																												Sidebar</span></a>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4112 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Right Sidebar">Right
-																												Sidebar</span></a>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4111 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Without Sidebar">Without
-																												Sidebar</span></a>
-																									</li>
-																								</ul>
-																							</li>
-																							<li
-																								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4110 menu-item-depth-1">
-																								<a href="#"><span
-																										data-text="Blog List Style">Blog
-																										List
-																										Style</span></a>
-																							</li>
-																							<li
-																								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4064 menu-item-depth-1">
-																								<a href="#"><span
-																										data-text="Blog Details">Blog
-																										Details</span></a>
-																								<ul
-																									class="sub-menu is-hidden">
-																									<li
-																										class="close-nav">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="go-back">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="see-all">
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4069 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Left Sidebar">Left
-																												Sidebar</span></a>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4068 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Right Sidebar">Right
-																												Sidebar</span></a>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4070 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Without Sidebar">Without
-																												Sidebar</span></a>
-																									</li>
-																								</ul>
-																							</li>
-																						</ul>
-																					</li>
-																					<li
-																						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4033 menu-item-depth-0">
-																						<a href="#"><span
-																								data-text="Pages">Pages</span></a>
-																						<ul class="sub-menu is-hidden">
-																							<li class="close-nav"><a
-																									href="javascript:void(0);"></a>
-																							</li>
-																							<li class="go-back"><a
-																									href="javascript:void(0);"></a>
-																							</li>
-																							<li class="see-all"></li>
-																							<li
-																								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4142 menu-item-depth-1">
-																								<a href="#"><span
-																										data-text="Events">Events</span></a>
-																								<ul
-																									class="sub-menu is-hidden">
-																									<li
-																										class="close-nav">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="go-back">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="see-all">
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4144 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Events listing">Events
-																												listing</span></a>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4145 menu-item-depth-2">
-																										<a href="#"><span
-																												data-text="Events single">Events
-																												single</span></a>
-																									</li>
-																								</ul>
-																							</li>
-																							<li
-																								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4035 menu-item-depth-1">
-																								<a
-																									href="../pages/faq.html"><span
-																										data-text="FAQ">FAQ</span></a>
-																							</li>
-																							<li
-																								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4030 menu-item-depth-1">
-																								<a
-																									href="../pages/contact.html"><span
-																										data-text="Contact">Contact</span></a>
-																							</li>
-																							<li <li
-																								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4039 menu-item-depth-1">
-																								<a
-																									href="../pages/404.html"><span
-																										data-text="404 Error">404
-																										Error</span></a>
-																							</li>
-																						</ul>
-																					</li>
-																					<li </ul>
-																						<div class="sub-menu-overlay">
-																						</div>
+																				</ul>
+																				<div class="sub-menu-overlay"></div>
 																			</div>
 																			<div class="mobile-nav-container mobile-nav-offcanvas-right"
 																				data-menu="275"><a href="#"
@@ -389,12 +394,32 @@
 																</div>
 															</div>
 														</div>
-														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5c4e368"
-															data-id="5c4e368" data-element_type="column">
+														<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d4e1982"
+															data-id="d4e1982" data-element_type="column">
 															<div
 																class="elementor-widget-wrap elementor-element-populated">
-																<div class="elementor-element elementor-element-1325c11 elementor-widget__width-initial elementor-hidden-mobile elementor-hidden-mobile_extra wdt-custom-search elementor-widget elementor-widget-wdt-header-icons"
-																	data-id="1325c11" data-element_type="widget"
+																<div class="elementor-element elementor-element-325a337 elementor-widget__width-initial elementor-widget elementor-widget-wdt-logo"
+																	data-id="325a337" data-element_type="widget"
+																	data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
+																	data-widget_type="wdt-logo.default">
+																	<div class="elementor-widget-container">
+																		<div id="regalia-325a337"
+																			class="wdt-logo-container"> <a
+																				href="../index.html" rel="home"><img
+																					loading="lazy"
+																					src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/03/logo-new.svg"
+																					alt="Petals" width="575"
+																					height="143" /></a></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-22f3398 elementor-hidden-mobile_extra elementor-hidden-mobile"
+															data-id="22f3398" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-13b8d20 elementor-widget__width-initial elementor-hidden-mobile elementor-align-right elementor-widget elementor-widget-wdt-header-icons"
+																	data-id="13b8d20" data-element_type="widget"
 																	data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
 																	data-widget_type="wdt-header-icons.default">
 																	<div class="elementor-widget-container">
@@ -415,10 +440,10 @@
 																							class="wdt-search-form-container show">
 																							<form method="get"
 																								id="searchform"
-																								action="https://wdtregalia.wpengine.com/">
+																								action="../">
 																								<input id="s" name="s"
 																									type="text" value=""
-																									placeholder="Enter Keyword"
+																									placeholder="Search Here..."
 																									class="text_input" />
 																								<ul
 																									class="quick_search_results">
@@ -430,1126 +455,28 @@
 																						</div>
 																					</div>
 																				</div>
-																				<div </div>
-																					<div </div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-dc2a2fe elementor-widget__width-initial wdt-home2-menu elementor-hidden-desktop elementor-hidden-laptop elementor-widget elementor-widget-wdt-header-menu"
-																			data-id="dc2a2fe" data-element_type="widget"
-																			data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																			data-widget_type="wdt-header-menu.default">
-																			<div class="elementor-widget-container">
-																				<div class="wdt-header-menu"
-																					data-menu="275">
-																					<div class="menu-container">
-																						<ul id="menu-main-menu-2"
-																							class="wdt-primary-nav "
-																							data-menu="275">
-																							<li class="close-nav"><a
-																									href="javascript:void(0);"></a>
-																							</li>
-																							<li
-																								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-4183 menu-item-depth-0">
-																								<a href="../index.html"><span
-																										data-text="Home">Home</span></a>
-																							</li>
-																							<li <li
-																								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4028 menu-item-depth-0">
-																								<a
-																									href="../pages/about.html"><span
-																										data-text="About">About</span></a>
-																							</li>
-																							<li
-																								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4029 menu-item-depth-0">
-																								<a
-																									href="./blog.html"><span
-																										data-text="Blog">Blog</span></a>
-																								<ul
-																									class="sub-menu is-hidden">
-																									<li
-																										class="close-nav">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="go-back">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="see-all">
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4114 menu-item-depth-1">
-																										<a href="#"><span
-																												data-text="Blog Grid Style">Blog
-																												Grid
-																												Style</span></a>
-																										<ul
-																											class="sub-menu is-hidden">
-																											<li
-																												class="close-nav">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="go-back">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="see-all">
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4113 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Left Sidebar">Left
-																														Sidebar</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4112 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Right Sidebar">Right
-																														Sidebar</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4111 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Without Sidebar">Without
-																														Sidebar</span></a>
-																											</li>
-																										</ul>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4110 menu-item-depth-1">
-																										<a href="#"><span
-																												data-text="Blog List Style">Blog
-																												List
-																												Style</span></a>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4064 menu-item-depth-1">
-																										<a href="#"><span
-																												data-text="Blog Details">Blog
-																												Details</span></a>
-																										<ul
-																											class="sub-menu is-hidden">
-																											<li
-																												class="close-nav">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="go-back">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="see-all">
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4069 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Left Sidebar">Left
-																														Sidebar</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4068 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Right Sidebar">Right
-																														Sidebar</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4070 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Without Sidebar">Without
-																														Sidebar</span></a>
-																											</li>
-																										</ul>
-																									</li>
-																								</ul>
-																							</li>
-																							<li
-																								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4033 menu-item-depth-0">
-																								<a href="#"><span
-																										data-text="Pages">Pages</span></a>
-																								<ul
-																									class="sub-menu is-hidden">
-																									<li
-																										class="close-nav">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="go-back">
-																										<a
-																											href="javascript:void(0);"></a>
-																									</li>
-																									<li class="see-all">
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4142 menu-item-depth-1">
-																										<a href="#"><span
-																												data-text="Events">Events</span></a>
-																										<ul
-																											class="sub-menu is-hidden">
-																											<li
-																												class="close-nav">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="go-back">
-																												<a
-																													href="javascript:void(0);"></a>
-																											</li>
-																											<li
-																												class="see-all">
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4144 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Events listing">Events
-																														listing</span></a>
-																											</li>
-																											<li
-																												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4145 menu-item-depth-2">
-																												<a
-																													href="#"><span
-																														data-text="Events single">Events
-																														single</span></a>
-																											</li>
-																										</ul>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4035 menu-item-depth-1">
-																										<a
-																											href="../pages/faq.html"><span
-																												data-text="FAQ">FAQ</span></a>
-																									</li>
-																									<li
-																										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4030 menu-item-depth-1">
-																										<a
-																											href="../pages/contact.html"><span
-																												data-text="Contact">Contact</span></a>
-																									</li>
-																									<li <li
-																										class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4039 menu-item-depth-1">
-																										<a
-																											href="../pages/404.html"><span
-																												data-text="404 Error">404
-																												Error</span></a>
-																									</li>
-																								</ul>
-																							</li>
-																							<li </ul>
-																								<div
-																									class="sub-menu-overlay">
-																								</div>
-																					</div>
-																					<div class="mobile-nav-container mobile-nav-offcanvas-right"
-																						data-menu="275"><a href="#"
-																							class="menu-trigger menu-trigger-icon"
-																							data-menu="275"><i></i><span>Menu</span></a>
-																						<div class="mobile-menu"
-																							data-menu="275"></div>
-																						<div class="overlay"></div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="elementor-element elementor-element-d7128a1 end elementor-widget__width-auto wdt-home-3-popup-btn elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile elementor-widget elementor-widget-wdt-popup-box"
-																			data-id="d7128a1" data-element_type="widget"
-																			data-settings="{&quot;trigger_element_icon_align&quot;:&quot;end&quot;,&quot;trigger_element_icon_normal_background_background&quot;:&quot;classic&quot;,&quot;trigger_element_icon_hover_background_background&quot;:&quot;classic&quot;,&quot;show_close_Button&quot;:&quot;true&quot;,&quot;esc_to_exit&quot;:&quot;true&quot;,&quot;click_to_exit&quot;:&quot;true&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																			data-widget_type="wdt-popup-box.default">
-																			<div class="elementor-widget-container">
-																				<div class="wdt-popup-box-trigger-holder wdt-click-element-icon"
-																					id="wdt-popup-box-trigger-d7128a1"
-																					data-settings="{&quot;module_id&quot;:&quot;d7128a1&quot;,&quot;module_ref_id&quot;:&quot;wdt-popup-box-d7128a1&quot;,&quot;popup_class&quot;:&quot;wdt-popup-box-window wdt-popup-box-window-d7128a1 wdt-right-side-slide&quot;,&quot;trigger_type&quot;:&quot;on-click&quot;,&quot;on_load_delay&quot;:null,&quot;on_load_after&quot;:null,&quot;external_class&quot;:null,&quot;external_id&quot;:null,&quot;show_close_Button&quot;:true,&quot;esc_to_exit&quot;:true,&quot;click_to_exit&quot;:true,&quot;mfp_src&quot;:&quot;#wdt-popup-box-content-holder-d7128a1&quot;,&quot;mfp_type&quot;:&quot;inline&quot;}">
-																					<div
-																						class="wdt-popup-box-trigger-element">
-																						<span
-																							class="wdt-popup-box-trigger-item wdt-popup-box-trigger-icon"><i><svg
-																									xmlns="http://www.w3.org/2000/svg"
-																									width="800px"
-																									height="800px"
-																									viewBox="0 0 24 24"
-																									fill="none">
-																									<path
-																										d="M5 8H13.75M5 12H19M10.25 16L19 16"
-																										stroke="currentcolor"
-																										stroke-linecap="round"
-																										stroke-linejoin="round">
-																									</path>
-																								</svg></i></span>
-																					</div>
-																				</div>
-																				<div id="wdt-popup-box-content-holder-d7128a1"
-																					class="wdt-popup-box-content-holder wdt-popup-box-content-holder-d7128a1 wdt-content-type-template mfp-hide">
-																					<div
-																						class="wdt-popup-box-content-inner">
-																						<style>
-																							.elementor-4223 .elementor-element.elementor-element-9b81c66>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
-																								margin-bottom: 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-67d0593 {
-																								margin-top: 0px;
-																								margin-bottom: 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-4999e03>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
-																								margin-bottom: 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-c47c56e>.elementor-widget-container {
-																								padding: 0px 0px 20px 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-c47c56e div.wdt-logo-container img {
-																								max-width: 200px;
-																								width: 200px;
-																							}
-
-																							.elementor-widget-text-editor {
-																								font-family: var(--e-global-typography-text-font-family), Sans-serif;
-																								font-weight: var(--e-global-typography-text-font-weight);
-																								color: var(--e-global-color-text);
-																							}
-
-																							.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
-																								background-color: var(--e-global-color-primary);
-																							}
-
-																							.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap,
-																							.elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap {
-																								color: var(--e-global-color-primary);
-																								border-color: var(--e-global-color-primary);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0d6f3c0 {
-																								width: var(--container-widget-width, 450px);
-																								max-width: 450px;
-																								--container-widget-width: 450px;
-																								--container-widget-flex-grow: 0;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-d7ce12b .elementor-widget-container {
-																								text-align: start;
-																								justify-content: start;
-																								justify-items: start;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-d7ce12b>.elementor-widget-container {
-																								margin: 20px 0px 0px 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-d7ce12b .wdt-button-holder .wdt-button {
-																								margin: 0px 0px 0px 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-ffa5534 {
-																								margin-top: 50px;
-																								margin-bottom: 40px;
-																							}
-
-																							.elementor-widget-image-gallery .gallery-item .gallery-caption {
-																								font-family: var(--e-global-typography-accent-font-family), Sans-serif;
-																								font-weight: var(--e-global-typography-accent-font-weight);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-4390cfc {
-																								width: var(--container-widget-width, 70%);
-																								max-width: 70%;
-																								--container-widget-width: 70%;
-																								--container-widget-flex-grow: 0;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-4390cfc .gallery-item .gallery-caption {
-																								display: none;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-4390cfc .gallery-item img {
-																								border-style: none;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-417ad70 {
-																								margin-top: 0px;
-																								margin-bottom: 50px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-5bec880>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
-																								margin-bottom: 15px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-5ecf94e .wdt-heading-holder,
-																							.elementor-4223 .elementor-element.elementor-element-5ecf94e .wdt-heading-holder>.wdt-heading-separator-wrapper .wdt-heading-separator,
-																							.elementor-4223 .elementor-element.elementor-element-5ecf94e .wdt-heading-holder>.wdt-heading-title-wrapper .wdt-heading-title,
-																							.elementor-4223 .elementor-element.elementor-element-5ecf94e .wdt-heading-holder>.wdt-heading-subtitle-wrapper .wdt-heading-subtitle {
-																								text-align: start;
-																								justify-content: start;
-																								justify-items: start;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-5ecf94e .wdt-heading-holder .wdt-heading-title-wrapper .wdt-heading-title {
-																								align-items: center;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-5ecf94e .wdt-heading-holder .wdt-heading-subtitle-wrapper .wdt-heading-subtitle {
-																								align-items: center;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-5ecf94e>.elementor-widget-container {
-																								margin: 0px 0px 5px 0px;
-																							}
-
-																							.elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after {
-																								border-color: var(--e-global-color-text);
-																							}
-
-																							.elementor-widget-icon-list .elementor-icon-list-icon i {
-																								color: var(--e-global-color-primary);
-																							}
-
-																							.elementor-widget-icon-list .elementor-icon-list-icon svg {
-																								fill: var(--e-global-color-primary);
-																							}
-
-																							.elementor-widget-icon-list .elementor-icon-list-item>.elementor-icon-list-text,
-																							.elementor-widget-icon-list .elementor-icon-list-item>a {
-																								font-family: var(--e-global-typography-text-font-family), Sans-serif;
-																								font-weight: var(--e-global-typography-text-font-weight);
-																							}
-
-																							.elementor-widget-icon-list .elementor-icon-list-text {
-																								color: var(--e-global-color-secondary);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755>.elementor-widget-container {
-																								margin: 10px 0px 0px 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
-																								padding-bottom: calc(10px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
-																								margin-top: calc(10px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
-																								margin-right: calc(10px/2);
-																								margin-left: calc(10px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-items.elementor-inline-items {
-																								margin-right: calc(-10px/2);
-																								margin-left: calc(-10px/2);
-																							}
-
-																							body.rtl .elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
-																								left: calc(-10px/2);
-																							}
-
-																							body:not(.rtl) .elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
-																								right: calc(-10px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-icon i {
-																								color: var(--e-global-color-text);
-																								transition: color 0.3s;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-icon svg {
-																								fill: var(--e-global-color-text);
-																								transition: fill 0.3s;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-item:hover .elementor-icon-list-icon i {
-																								color: var(--e-global-color-d7084a7);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-item:hover .elementor-icon-list-icon svg {
-																								fill: var(--e-global-color-d7084a7);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 {
-																								--e-icon-list-icon-size: 20px;
-																								--icon-vertical-offset: 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-icon {
-																								padding-right: 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-fb0a755 .elementor-icon-list-text {
-																								transition: color 0.3s;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-2d2e864>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
-																								margin-bottom: 15px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-e9f1bf5 .wdt-heading-holder,
-																							.elementor-4223 .elementor-element.elementor-element-e9f1bf5 .wdt-heading-holder>.wdt-heading-separator-wrapper .wdt-heading-separator,
-																							.elementor-4223 .elementor-element.elementor-element-e9f1bf5 .wdt-heading-holder>.wdt-heading-title-wrapper .wdt-heading-title,
-																							.elementor-4223 .elementor-element.elementor-element-e9f1bf5 .wdt-heading-holder>.wdt-heading-subtitle-wrapper .wdt-heading-subtitle {
-																								text-align: start;
-																								justify-content: start;
-																								justify-items: start;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-e9f1bf5 .wdt-heading-holder .wdt-heading-title-wrapper .wdt-heading-title {
-																								align-items: center;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-e9f1bf5 .wdt-heading-holder .wdt-heading-subtitle-wrapper .wdt-heading-subtitle {
-																								align-items: center;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-e9f1bf5>.elementor-widget-container {
-																								margin: 0px 0px 5px 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
-																								padding-bottom: calc(30px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
-																								margin-top: calc(30px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item {
-																								margin-right: calc(30px/2);
-																								margin-left: calc(30px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-items.elementor-inline-items {
-																								margin-right: calc(-30px/2);
-																								margin-left: calc(-30px/2);
-																							}
-
-																							body.rtl .elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
-																								left: calc(-30px/2);
-																							}
-
-																							body:not(.rtl) .elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after {
-																								right: calc(-30px/2);
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-icon i {
-																								color: var(--e-global-color-d7084a7);
-																								transition: color 0.3s;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-icon svg {
-																								fill: var(--e-global-color-d7084a7);
-																								transition: fill 0.3s;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab {
-																								--e-icon-list-icon-size: 22px;
-																								--icon-vertical-offset: 0px;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-text {
-																								color: var(--e-global-color-text);
-																								transition: color 0.3s;
-																							}
-
-																							.elementor-4223 .elementor-element.elementor-element-0e407ab .elementor-icon-list-item:hover .elementor-icon-list-text {
-																								color: var(--e-global-color-d7084a7);
-																							}
-
-																							@media(max-width:1540px) {
-																								.elementor-4223 .elementor-element.elementor-element-c47c56e div.wdt-logo-container img {
-																									max-width: 150px;
-																									width: 150px;
-																								}
-																							}
-
-																							@media(max-width:1280px) {
-																								.elementor-4223 .elementor-element.elementor-element-c47c56e div.wdt-logo-container img {
-																									max-width: 100px;
-																									width: 100px;
-																								}
-																							}
-
-																							@media(max-width:1024px) {
-																								.elementor-4223 .elementor-element.elementor-element-c47c56e div.wdt-logo-container img {
-																									max-width: 100px;
-																									width: 100px;
-																								}
-																							}
-
-																							@media(max-width:768px) {
-																								.elementor-4223 .elementor-element.elementor-element-9b81c66>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
-																									margin-bottom: 0px;
-																								}
-
-																								.elementor-4223 .elementor-element.elementor-element-c47c56e div.wdt-logo-container img {
-																									max-width: 100px;
-																									width: 100px;
-																								}
-
-																								.elementor-4223 .elementor-element.elementor-element-339760a>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
-																									margin-bottom: 0px;
-																								}
-																							}
-
-																							@media(max-width:480px) {
-																								.elementor-4223 .elementor-element.elementor-element-c47c56e div.wdt-logo-container img {
-																									max-width: 100px;
-																									width: 100px;
-																								}
-																							}
-																						</style>
-																						<div data-elementor-type="section"
-																							data-elementor-id="4223"
-																							class="elementor elementor-4223">
-																							<section
-																								class="elementor-section elementor-top-section elementor-element elementor-element-56a588b elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-																								data-id="56a588b"
-																								data-element_type="section"
-																								data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
-																								<div
-																									class="elementor-container elementor-column-gap-no">
-																									<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9b81c66"
-																										data-id="9b81c66"
-																										data-element_type="column">
-																										<div
-																											class="elementor-widget-wrap elementor-element-populated">
-																											<section
-																												class="elementor-section elementor-inner-section elementor-element elementor-element-67d0593 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-																												data-id="67d0593"
-																												data-element_type="section"
-																												data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
-																												<div
-																													class="elementor-container elementor-column-gap-no">
-																													<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4999e03"
-																														data-id="4999e03"
-																														data-element_type="column">
-																														<div
-																															class="elementor-widget-wrap elementor-element-populated">
-																															<div class="elementor-element elementor-element-c47c56e elementor-widget elementor-widget-wdt-logo"
-																																data-id="c47c56e"
-																																data-element_type="widget"
-																																data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="wdt-logo.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<div id="regalia-c47c56e"
-																																		class="wdt-logo-container">
-																																		<a href="../index.html"
-																																			rel="home"><img
-																																				loading="lazy"
-																																				src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/03/logo-new.svg"
-																																				alt="Regalia Site"
-																																				width="575"
-																																				height="143" /></a>
-																																	</div>
-																																</div>
-																															</div>
-																															<div class="elementor-element elementor-element-0d6f3c0 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-																																data-id="0d6f3c0"
-																																data-element_type="widget"
-																																data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="text-editor.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<p>Tristique
-																																		sollicitudin
-																																		nibh
-																																		sit
-																																		amet
-																																		commodo
-																																		nulla
-																																		facilisi
-																																		nullam
-																																		vehicula.
-																																		Ultrices
-																																		tincidunt
-																																		arcu
-																																		non
-																																		sodales
-																																		neque
-																																		vel
-																																		turpis
-																																		nunc
-																																		sodales. 
-																																	</p>
-																																</div>
-																															</div>
-																															<div class="elementor-element elementor-element-d7ce12b start elementor-widget elementor-widget-wdt-button"
-																																data-id="d7ce12b"
-																																data-element_type="widget"
-																																data-settings="{&quot;item_align&quot;:&quot;start&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="wdt-button.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<div class="wdt-button-holder wdt-template-filled wdt-button-link wdt-button-style-default wdt-button-size-nm wdt-animation- wdt-button-icon-after"
-																																		id="wdt-button-d7ce12b">
-																																		<a class="wdt-button"
-																																			href="#">
-																																			<div
-																																				class="wdt-button-text">
-																																				<span>Know
-																																					our
-																																					story</span>
-																																			</div>
-																																		</a>
-																																	</div>
-																																</div>
-																															</div>
-																														</div>
-																													</div>
-																												</div>
-																											</section>
-																											<section
-																												class="elementor-section elementor-inner-section elementor-element elementor-element-ffa5534 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-																												data-id="ffa5534"
-																												data-element_type="section"
-																												data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
-																												<div
-																													class="elementor-container elementor-column-gap-no">
-																													<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-339760a"
-																														data-id="339760a"
-																														data-element_type="column">
-																														<div
-																															class="elementor-widget-wrap elementor-element-populated">
-																															<div class="elementor-element elementor-element-4390cfc elementor-widget__width-initial wdt-cut-side-menu-gallery elementor-widget elementor-widget-image-gallery"
-																																data-id="4390cfc"
-																																data-element_type="widget"
-																																data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="image-gallery.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<div
-																																		class="elementor-image-gallery">
-																																		<div id='gallery-1'
-																																			class='gallery galleryid-3882 gallery-columns-4 gallery-size-full'>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-24"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU2MiwidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0yNC5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-24.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-24.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-24-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-23"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU2MSwidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0yMy5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-23.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-23.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-23-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-22"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU2MCwidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0yMi5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-22.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-22.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-22-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-21"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU1OSwidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0yMS5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-21.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-21.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-21-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-20"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU1OCwidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0yMC5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-20.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-20.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-20-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-19"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU1NywidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0xOS5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-19.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-19.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-19-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-18"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU1NiwidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0xOC5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-18.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-18.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-18-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																			<figure
-																																				class='gallery-item'>
-																																				<div
-																																					class='gallery-icon portrait'>
-																																					<a data-elementor-open-lightbox="yes"
-																																						data-elementor-lightbox-slideshow="4390cfc"
-																																						data-elementor-lightbox-title="New-Shop-2-17"
-																																						data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDU1NSwidXJsIjoiaHR0cHM6XC9cL3dkdHJlZ2FsaWEud3BlbmdpbmUuY29tXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wNFwvTmV3LVNob3AtMi0xNy5qcGciLCJzbGlkZXNob3ciOiI0MzkwY2ZjIn0%3D"
-																																						href='#'><img
-																																							loading="lazy"
-																																							width="690"
-																																							height="840"
-																																							src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-17.jpg"
-																																							class="attachment-full size-full"
-																																							alt=""
-																																							decoding="async"
-																																							srcset="https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-17.jpg 690w, https://wdtregalia.wpengine.com/wp-content/uploads/2024/04/New-Shop-2-17-246x300.jpg 246w"
-																																							sizes="(max-width: 690px) 100vw, 690px" /></a>
-																																				</div>
-																																			</figure>
-																																		</div>
-																																	</div>
-																																</div>
-																															</div>
-																														</div>
-																													</div>
-																												</div>
-																											</section>
-																											<section
-																												class="elementor-section elementor-inner-section elementor-element elementor-element-417ad70 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-																												data-id="417ad70"
-																												data-element_type="section"
-																												data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
-																												<div
-																													class="elementor-container elementor-column-gap-no">
-																													<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5bec880"
-																														data-id="5bec880"
-																														data-element_type="column">
-																														<div
-																															class="elementor-widget-wrap elementor-element-populated">
-																															<div class="elementor-element elementor-element-5ecf94e start elementor-widget elementor-widget-wdt-heading"
-																																data-id="5ecf94e"
-																																data-element_type="widget"
-																																data-settings="{&quot;item_align&quot;:&quot;start&quot;,&quot;title_vertical_align&quot;:&quot;center&quot;,&quot;subtitle_vertical_align&quot;:&quot;center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="wdt-heading.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<div class="wdt-heading-holder "
-																																		id="wdt-heading-5ecf94e">
-																																		<h4
-																																			class="wdt-heading-title-wrapper wdt-heading-align-center wdt-heading-deco-wrapper">
-																																			<span
-																																				class="wdt-heading-title">We
-																																				are
-																																				Social</span>
-																																		</h4>
-																																	</div>
-																																</div>
-																															</div>
-																															<div class="elementor-element elementor-element-fb0a755 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-																																data-id="fb0a755"
-																																data-element_type="widget"
-																																data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="icon-list.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<ul
-																																		class="elementor-icon-list-items elementor-inline-items">
-																																		<li
-																																			class="elementor-icon-list-item elementor-inline-item">
-																																			<a
-																																				href="https://www.facebook.com/">
-
-																																				<span
-																																					class="elementor-icon-list-icon">
-																																					<svg aria-hidden="true"
-																																						class="e-font-icon-svg e-fab-facebook-f"
-																																						viewBox="0 0 320 512"
-																																						xmlns="http://www.w3.org/2000/svg">
-																																						<path
-																																							d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-																																						</path>
-																																					</svg>
-																																				</span>
-																																				<span
-																																					class="elementor-icon-list-text"></span>
-																																			</a>
-																																		</li>
-																																		<li
-																																			class="elementor-icon-list-item elementor-inline-item">
-																																			<a
-																																				href="https://www.instagram.com/">
-
-																																				<span
-																																					class="elementor-icon-list-icon">
-																																					<svg aria-hidden="true"
-																																						class="e-font-icon-svg e-fab-instagram"
-																																						viewBox="0 0 448 512"
-																																						xmlns="http://www.w3.org/2000/svg">
-																																						<path
-																																							d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-																																						</path>
-																																					</svg>
-																																				</span>
-																																				<span
-																																					class="elementor-icon-list-text"></span>
-																																			</a>
-																																		</li>
-																																		<li
-																																			class="elementor-icon-list-item elementor-inline-item">
-																																			<a
-																																				href="https://twitter.com/">
-
-																																				<span
-																																					class="elementor-icon-list-icon">
-																																					<svg xmlns="http://www.w3.org/2000/svg"
-																																						viewBox="0 0 19 18">
-																																						<path
-																																							d="M0.0462914 0L7.3819 9.92811L0 18H1.66179L8.1253 10.9338L13.3464 18H19L11.2522 7.51415L18.1236 0.00146392H16.4618L10.5102 6.50992L5.70131 0.00146392H0.0477214L0.0462914 0ZM2.48907 1.23845H5.08663L16.5558 16.7601H13.9582L2.48907 1.23845Z">
-																																						</path>
-																																					</svg>
-																																				</span>
-																																				<span
-																																					class="elementor-icon-list-text"></span>
-																																			</a>
-																																		</li>
-																																		<li
-																																			class="elementor-icon-list-item elementor-inline-item">
-																																			<a
-																																				href="https://in.pinterest.com/">
-
-																																				<span
-																																					class="elementor-icon-list-icon">
-																																					<svg aria-hidden="true"
-																																						class="e-font-icon-svg e-fab-pinterest-p"
-																																						viewBox="0 0 384 512"
-																																						xmlns="http://www.w3.org/2000/svg">
-																																						<path
-																																							d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z">
-																																						</path>
-																																					</svg>
-																																				</span>
-																																				<span
-																																					class="elementor-icon-list-text"></span>
-																																			</a>
-																																		</li>
-																																	</ul>
-																																</div>
-																															</div>
-																														</div>
-																													</div>
-																												</div>
-																											</section>
-																											<section
-																												class="elementor-section elementor-inner-section elementor-element elementor-element-bdcb015 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-																												data-id="bdcb015"
-																												data-element_type="section"
-																												data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
-																												<div
-																													class="elementor-container elementor-column-gap-no">
-																													<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2d2e864"
-																														data-id="2d2e864"
-																														data-element_type="column">
-																														<div
-																															class="elementor-widget-wrap elementor-element-populated">
-																															<div class="elementor-element elementor-element-e9f1bf5 start elementor-widget elementor-widget-wdt-heading"
-																																data-id="e9f1bf5"
-																																data-element_type="widget"
-																																data-settings="{&quot;item_align&quot;:&quot;start&quot;,&quot;title_vertical_align&quot;:&quot;center&quot;,&quot;subtitle_vertical_align&quot;:&quot;center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="wdt-heading.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<div class="wdt-heading-holder "
-																																		id="wdt-heading-e9f1bf5">
-																																		<h4
-																																			class="wdt-heading-title-wrapper wdt-heading-align-center wdt-heading-deco-wrapper">
-																																			<span
-																																				class="wdt-heading-title">Contact
-																																				Us:</span>
-																																		</h4>
-																																	</div>
-																																</div>
-																															</div>
-																															<div class="elementor-element elementor-element-0e407ab elementor-list-item-link-inline elementor-icon-list--layout-inline elementor-widget elementor-widget-icon-list"
-																																data-id="0e407ab"
-																																data-element_type="widget"
-																																data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
-																																data-widget_type="icon-list.default">
-																																<div
-																																	class="elementor-widget-container">
-																																	<ul
-																																		class="elementor-icon-list-items elementor-inline-items">
-																																		<li
-																																			class="elementor-icon-list-item elementor-inline-item">
-																																			<a
-																																				href="tel:+000%20123%20456789">
-
-																																				<span
-																																					class="elementor-icon-list-icon">
-																																					<svg xmlns="http://www.w3.org/2000/svg"
-																																						viewBox="0 0 24 24">
-																																						<path
-																																							d="M15.0822 24C14.8287 23.9662 14.5757 23.9276 14.3218 23.8999C12.6453 23.7146 11.0769 23.1772 9.61061 22.3672C6.0671 20.4104 3.33811 17.6384 1.44809 14.0563C0.751145 12.7357 0.278521 11.329 0.0904123 9.84471C-0.313552 6.65944 0.63828 3.92175 2.90358 1.65234C3.35269 1.2024 3.83895 0.754818 4.38541 0.441698C5.73462 -0.33076 7.37493 -0.0641844 8.48336 1.03926C9.04863 1.60203 9.60308 2.17655 10.142 2.76424C11.7522 4.52119 11.1855 7.22409 9.01007 8.20482C8.71097 8.33976 8.41564 8.48268 8.11326 8.60915C7.32038 8.94108 6.83177 9.97259 7.06455 10.8875C7.26395 11.6708 7.66321 12.3454 8.15841 12.9651C9.21793 14.2909 10.3903 15.5025 11.8369 16.4141C12.4115 16.7761 13.0304 17.0441 13.7344 16.9774C14.4281 16.9115 14.9891 16.6031 15.3334 15.9811C15.5106 15.6614 15.6498 15.3191 15.7942 14.9825C16.7282 12.8052 19.5211 12.219 21.2475 13.8433C21.7883 14.3525 22.3164 14.8758 22.8507 15.3915C23.4808 16.0004 23.8655 16.7291 23.9445 17.6097C23.9492 17.6605 23.9807 17.7094 24 17.7588V18.1339C23.9802 18.1913 23.9478 18.2477 23.9426 18.3065C23.8951 18.8627 23.7282 19.3841 23.4023 19.8321C23.114 20.2285 22.789 20.6027 22.4467 20.9539C20.8534 22.5872 18.9544 23.6309 16.6623 23.8984C16.4164 23.9271 16.1718 23.9657 15.9268 23.9995H15.0822V24ZM15.4815 22.1485C15.4852 22.1692 15.489 22.1899 15.4923 22.2111C16.13 22.1142 16.7785 22.062 17.403 21.9121C19.1487 21.4922 20.5148 20.4687 21.6656 19.1269C22.3587 18.3187 22.3169 17.4118 21.5518 16.6671C21.0528 16.1819 20.5524 15.6981 20.0511 15.2157C19.1948 14.3911 17.9156 14.6506 17.4458 15.7399C17.2944 16.0911 17.1279 16.4357 16.9699 16.7841C16.3835 18.0752 14.5405 19.086 12.8846 18.755C12.1063 18.5994 11.3859 18.3098 10.7336 17.8697C8.90379 16.636 7.37305 15.0958 6.14893 13.2608C5.67349 12.5485 5.36123 11.7639 5.22673 10.904C4.9803 9.33177 5.92414 7.64111 7.12522 7.07928C7.50002 6.90392 7.87295 6.72526 8.24964 6.55506C9.32421 6.07128 9.58051 4.81645 8.77164 3.95607C8.2628 3.41493 7.74692 2.88037 7.22538 2.35145C6.56935 1.68619 5.6227 1.63353 4.92575 2.25178C4.471 2.65517 4.02706 3.08018 3.63486 3.54375C2.44789 4.94621 1.83089 6.56729 1.8229 8.41874C1.81678 9.87574 2.14268 11.2589 2.75686 12.5622C4.58339 16.4372 7.44171 19.3112 11.3003 21.1702C12.6128 21.8025 14.0095 22.1565 15.481 22.1485H15.4815Z"
-																																							fill="">
-																																						</path>
-																																						<path
-																																							d="M23.9995 5.68712C23.9521 5.98822 23.9166 6.29209 23.8549 6.59042C23.381 8.88052 21.6144 10.5717 19.3255 10.9328C16.3384 11.4043 13.5332 9.34371 13.0671 6.36044C12.6098 3.43165 14.534 0.643262 17.4787 0.0950968C20.5851 -0.483086 23.4345 1.64261 23.8968 4.6402C23.9318 4.86603 23.9655 5.09231 24 5.31814V5.68666L23.9995 5.68712ZM18.491 1.79686C16.4729 1.74837 14.79 3.47922 14.778 5.47746C14.7656 7.51449 16.4636 9.2084 18.4642 9.2181C20.4906 9.2278 22.1818 7.52881 22.1887 5.51579C22.196 3.49215 20.5049 1.75576 18.491 1.79686Z"
-																																							fill="">
-																																						</path>
-																																						<path
-																																							d="M18.7305 4.96983C18.8959 4.96983 19.0274 4.9584 19.1571 4.97191C19.6322 5.02022 19.9869 5.4135 19.9997 5.9481C20.0111 6.43333 19.7363 6.9274 19.2603 6.96585C18.7587 7.00585 18.2492 7.01832 17.7503 6.96117C17.2875 6.90818 17.0175 6.49464 17.0083 5.94446C16.9977 5.31479 16.9968 4.68461 17.0083 4.05494C17.0193 3.45749 17.419 2.98628 17.8782 3.00031C18.3418 3.01433 18.7106 3.46476 18.7287 4.05338C18.738 4.34484 18.7305 4.63681 18.7305 4.97087V4.96983Z"
-																																							fill="">
-																																						</path>
-																																					</svg>
-																																				</span>
-																																				<span
-																																					class="elementor-icon-list-text">+000
-																																					123
-																																					456789</span>
-																																			</a>
-																																		</li>
-																																		<li
-																																			class="elementor-icon-list-item elementor-inline-item">
-																																			<a
-																																				href="mailto:info@example.com">
-
-																																				<span
-																																					class="elementor-icon-list-icon">
-																																					<svg xmlns="http://www.w3.org/2000/svg"
-																																						viewBox="0 0 24 24">
-																																						<path
-																																							d="M24 16.5518C23.9516 16.8595 23.9154 17.1705 23.852 17.4754C23.368 19.8132 21.5622 21.547 19.2282 21.9113C18.9129 21.9603 18.592 21.9943 18.2734 21.9948C14.0838 22.0005 9.89426 22.0019 5.70422 21.9972C3.02535 21.9943 0.791009 20.2454 0.172159 17.6523C0.064083 17.1993 0.0128645 16.7222 0.0100452 16.256C-0.00546131 13.7515 0.00111719 11.2467 0.00299677 8.74227C0.00534624 5.95189 1.8431 3.67919 4.56567 3.11668C4.93735 3.03976 5.32501 3.00673 5.70516 3.00626C9.89473 2.9987 14.0843 2.9987 18.2743 3.00248C21.0519 3.00484 23.3144 4.86226 23.8717 7.59224C23.9295 7.87443 23.9577 8.1623 24 8.4478V16.5518ZM11.9848 20.1515C14.1186 20.1515 16.2524 20.153 18.3862 20.1496C18.5958 20.1496 18.8072 20.1322 19.0144 20.1015C20.7408 19.8472 22.1383 18.2318 22.1406 16.4811C22.1449 13.8275 22.1425 11.1735 22.1397 8.52C22.1397 8.35672 22.1214 8.19156 22.0955 8.02969C21.8014 6.18596 20.2441 4.84905 18.3876 4.84858C14.12 4.84716 9.85244 4.8481 5.58439 4.84858C5.45141 4.84858 5.31749 4.84291 5.18593 4.85754C3.29742 5.06518 1.84216 6.69326 1.84075 8.6007C1.83887 11.1995 1.83887 13.7983 1.84075 16.3971C1.84216 18.4682 3.5178 20.1492 5.58205 20.1515C7.71583 20.1539 9.84962 20.152 11.9834 20.152L11.9848 20.1515Z">
-																																						</path>
-																																						<path
-																																							d="M12.4222 13.9969C11.3295 14.037 10.0621 13.6906 8.95112 12.898C7.44568 11.8236 5.95127 10.7358 4.45303 9.65208C3.93282 9.27538 3.85267 8.7266 4.25387 8.32359C4.59652 7.97988 5.10953 7.94822 5.54576 8.25984C6.44365 8.90135 7.33578 9.55 8.23031 10.196C8.81003 10.6146 9.39023 11.0318 9.9685 11.4518C11.4706 12.5418 13.3484 12.5485 14.8721 11.4674C16.3747 10.4015 17.8768 9.33512 19.3784 8.26742C19.6313 8.08731 19.8919 7.94956 20.2326 8.01777C20.6136 8.094 20.8584 8.30085 20.9615 8.64457C21.0695 9.00433 20.9462 9.30971 20.6405 9.53439C20.0214 9.98956 19.3899 10.4305 18.7622 10.8758C17.8432 11.5285 16.9246 12.1816 16.0032 12.8316C14.9532 13.5725 14.0433 13.8886 12.4217 13.9964L12.4222 13.9969Z">
-																																						</path>
-																																					</svg>
-																																				</span>
-																																				<span
-																																					class="elementor-icon-list-text">info@example.com</span>
-																																			</a>
-																																		</li>
-																																	</ul>
-																																</div>
-																															</div>
-																														</div>
-																													</div>
-																												</div>
-																											</section>
-																										</div>
-																									</div>
-																								</div>
-																							</section>
-																						</div>
-																					</div>
-																				</div>
 																			</div>
 																		</div>
 																	</div>
 																</div>
 															</div>
+														</div>
+													</div>
 												</section>
 											</div>
 										</div>
 									</div>
 								</section>
 								<section
-									class="elementor-section elementor-top-section elementor-element elementor-element-1530eea elementor-section-full_width elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile elementor-section-height-default elementor-section-height-default"
-									data-id="1530eea" data-element_type="section"
+									class="elementor-section elementor-top-section elementor-element elementor-element-7122823 elementor-section-full_width elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile elementor-section-height-default elementor-section-height-default"
+									data-id="7122823" data-element_type="section"
 									data-settings="{&quot;wdt_bg_image&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_laptop&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_tablet&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile_extra&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_image_mobile&quot;:{&quot;url&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;size&quot;:&quot;&quot;},&quot;wdt_bg_position&quot;:&quot;center center&quot;,&quot;wdt_animation_effect&quot;:&quot;none&quot;}">
 									<div class="elementor-container elementor-column-gap-no">
-										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9ef0d5b"
-											data-id="9ef0d5b" data-element_type="column">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e8393fe"
+											data-id="e8393fe" data-element_type="column">
 											<div class="elementor-widget-wrap elementor-element-populated">
-												<div class="elementor-element elementor-element-ce8aa88 elementor-widget elementor-widget-html"
-													data-id="ce8aa88" data-element_type="widget"
+												<div class="elementor-element elementor-element-4fcfb53 elementor-widget elementor-widget-html"
+													data-id="4fcfb53" data-element_type="widget"
 													data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
 													data-widget_type="html.default">
 													<div class="elementor-widget-container">
@@ -1570,9 +497,7 @@
 							</div>
 						</div>
 					</div>
-				</header>
-
- <!-- **Header - End ** -->
+				</header> <!-- **Header - End ** -->
 				<!-- ** Slider ** -->
 				<!-- ** Slider End ** -->
 				<!-- ** Breadcrumb ** -->
@@ -9628,8 +8553,8 @@
 																<div class="elementor-widget-container">
 																	<div id="regalia-4dd0264"
 																		class="wdt-logo-container"> <a
-																			href="../index.html"
-																			rel="home"><img loading="lazy"
+																			href="../index.html" rel="home"><img
+																				loading="lazy"
 																				src="https://wdtregalia.wpengine.com/wp-content/uploads/2024/03/logo-new.svg"
 																				alt="Petals" width="575"
 																				height="143" /></a></div>
@@ -10103,7 +9028,8 @@
 																data-settings="{&quot;wdt_animation_effect&quot;:&quot;none&quot;}"
 																data-widget_type="text-editor.default">
 																<div class="elementor-widget-container">
-																	<p><a href="../index.html">©Petals</a> all rights Reserved</p>
+																	<p><a href="../index.html">©Petals</a> all rights
+																		Reserved</p>
 																</div>
 															</div>
 														</div>
@@ -10728,6 +9654,5 @@
     </span> -->
 	</a>
 </body>
+
 </html>
-
-
