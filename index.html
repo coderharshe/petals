@@ -18637,7 +18637,7 @@
 		}
 
 		.woocommerce ul.products li.product .product-wrapper {
-			display: inline-block;
+			display: block;
 			float: left;
 			margin: 0 0 35px;
 			width: 100%;
@@ -18648,15 +18648,7 @@
 			padding-bottom: 80px;
 		}
 
-		.woocommerce ul.products li.product .product-wrapper,
-		.woocommerce ul.products li.product .product-wrapper:before,
-		.woocommerce ul.products li.product .product-thumb,
-		.woocommerce ul.products li.product .product-thumb .image,
-		.woocommerce ul.products li.product .product-thumb .image .product-thumb-overlay,
-		.woocommerce ul.products li.product .product-thumb .image img,
-		.woocommerce ul.products li.product .product-thumb a.image>div[class*="image"] img {
-			/* -webkit-border-radius: var(--wdtRadius_3X); border-radius: var(--wdtRadius_3X); */
-		}
+		/* .woocommerce ul.products li.product .product-wrapper... empty rule removed */
 
 		/* WooCommerce Default - Product Listing */
 		/* .woocommerce ul.products { background-color: #f2f2f2; margin-left: -15px; margin-right: -15px; }
@@ -18818,7 +18810,7 @@
 		.woocommerce ul.products li.product .product-thumb-content>div,
 		.woocommerce ul.products li.product .product-details>div {
 			clear: both;
-			display: inline-block;
+			display: block;
 			float: left;
 			margin: 6px 0 0;
 			width: 100%;
@@ -20339,13 +20331,13 @@
 		.woocommerce-page .quantity .qty,
 		.woocommerce .quantity input,
 		.woocommerce-page .quantity input {
-			display: inline-block;
+			display: block;
 			float: left;
 			font-weight: bold;
 			margin-top: 0;
 			min-height: 47px;
 			padding: 0;
-			vertical-align: middle;
+			/* vertical-align: middle; removed as display is block */
 			width: 40px;
 			-webkit-box-shadow: 0 0 0 1px rgba(var(--wdtHeadAltColorRgb), 0.15) inset;
 			box-shadow: 0 0 0 1px rgba(var(--wdtHeadAltColorRgb), 0.15) inset;
@@ -20622,6 +20614,7 @@
 		.woocommerce .quantity.quantity-with-arrows input[type='number'],
 		.woocommerce .quantity.quantity-with-plusminus input[type='number'] {
 			-moz-appearance: textfield;
+			appearance: textfield;
 		}
 
 		.woocommerce .quantity.quantity-with-arrows noindex:-o-prefocus,
@@ -20708,7 +20701,7 @@
 		.woocommerce .woocommerce-info .button,
 		.woocommerce .woocommerce-message .button {
 			background: transparent;
-			display: inline-block;
+			display: block;
 			float: right;
 			font-size: 14px;
 			line-height: 24px;
@@ -23589,7 +23582,7 @@
 		}
 
 		.woocommerce #reviews #comments ol.commentlist li .star-rating {
-			display: inline-block;
+			display: block;
 			float: right;
 			margin: 5px 0;
 		}
