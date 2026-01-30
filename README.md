@@ -1,1 +1,4 @@
-# petals
+# Petals
+
+This is the `petals` repository.
+
