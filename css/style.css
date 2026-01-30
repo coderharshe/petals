@@ -7912,7 +7912,7 @@ p.demo_store a {
     border: 0;
     list-style: none outside;
     overflow: hidden;
-    zoom: 1
+    /* zoom: 1; */
 }
 
 .woocommerce .widget_layered_nav_filters ul li {
@@ -10758,6 +10758,7 @@ a[class*=tec-events-elementor-event-widget] {
 .wvs-theme-sober .product form.cart .variations select,
 .wvs-theme-sober-child .product form.cart .variations select {
     -webkit-appearance: menulist-button !important;
+    appearance: auto !important;
     border: 1px solid #e4e6eb !important;
     padding: .5em 1em !important;
     text-align: left !important;
@@ -26692,6 +26693,7 @@ button,
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
 }
 
 /**
@@ -26801,6 +26803,7 @@ textarea {
 
 [type="search"] {
     -webkit-appearance: textfield;
+    appearance: textfield;
     /* 1 */
     outline-offset: -2px;
     /* 2 */
@@ -49473,7 +49476,7 @@ screen and (max-height: 300px) {
 .woocommerce ul.cart_list li dl dt,
 .woocommerce ul.product_list_widget li dl dd,
 .woocommerce ul.product_list_widget li dl dt {
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     margin-bottom: 1em
 }
@@ -49810,7 +49813,7 @@ screen and (max-height: 300px) {
     opacity: 0;
     position: relative;
     top: -1px;
-    speak: none;
+    /* speak: none; */
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -49999,7 +50002,7 @@ screen and (max-height: 300px) {
 
 .woocommerce .widget_rating_filter ul li.chosen a:before {
     font-family: "WooCommerce";
-    speak: none;
+    /* speak: none; */
     font-weight: 400;
     font-variant: normal;
     text-transform: none;
@@ -50143,14 +50146,14 @@ body[class*="woocommerce"] .yith-wcqv-wrapper #yith-quick-view-content>div.produ
 }
 
 #yith-quick-view-content .woocommerce-product-gallery {
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     margin: 0;
     position: relative;
 }
 
 #yith-quick-view-content .woocommerce-product-gallery figure {
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     position: relative;
     width: 100%;
@@ -50173,7 +50176,7 @@ body[class*="woocommerce"] .yith-wcqv-wrapper #yith-quick-view-content>div.produ
 }
 
 #yith-quick-view-content .woocommerce-product-gallery figure div {
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     margin: 0;
     padding: 0px;
@@ -60272,7 +60275,7 @@ _:default:not(:root:root),
 .wdt-shop-menu-cart-content-wrapper .buttons a {
     float: left;
     width: 100%;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 14px;
     font-weight: bold;
     background-color: var(--wdtHeadAltColor);
