@@ -7,19 +7,19 @@ $htmlContent = Get-Content $htmlPath -Raw -Encoding UTF8
 # RegEx to find all linked CSS files in the 'css/' folder
 # Case insensitive, single/double quotes
 $pattern = '<link[^>]+href=[''"]css/([^''"]+)[''"][^>]*>'
-$matches = [regex]::Matches($htmlContent, $pattern)
+$linkMatches = [regex]::Matches($htmlContent, $pattern)
 
-if ($matches.Count -eq 0) {
+if ($linkMatches.Count -eq 0) {
     Write-Error "No CSS links found to merge."
     exit
 }
 
-Write-Host "Found $($matches.Count) CSS files to merge."
+Write-Host "Found $($linkMatches.Count) CSS files to merge."
 
 $combinedCss = New-Object System.Text.StringBuilder
 
 # Iterate through matches to merge content
-foreach ($match in $matches) {
+foreach ($match in $linkMatches) {
     $fileName = $match.Groups[1].Value
     $filePath = Join-Path $cssDir $fileName
     
@@ -45,15 +45,15 @@ Write-Host "Created combined CSS at $outputCss"
 $newHtml = $htmlContent
 
 # Identify the last match to replace it with the new link
-$lastMatch = $matches[$matches.Count - 1]
+$lastMatch = $linkMatches[$linkMatches.Count - 1]
 $newLinkTag = "<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />"
 
 # Replace the last match with the new link
 $newHtml = $newHtml.Remove($lastMatch.Index, $lastMatch.Length).Insert($lastMatch.Index, $newLinkTag)
 
 # Remove all other matches (in reverse order to not mess up indices)
-for ($i = $matches.Count - 2; $i -ge 0; $i--) {
-    $m = $matches[$i]
+for ($i = $linkMatches.Count - 2; $i -ge 0; $i--) {
+    $m = $linkMatches[$i]
     # Check if we already replaced this (unlikely since we iterate distinct matches unless duplicates exist)
     # We simply remove the tag string.
     # Note: Text manipulation by index on the *string* needs careful handling if indices shift.

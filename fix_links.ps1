@@ -7,11 +7,11 @@ $newContent = $content
 
 # Regex to find stylesheet links
 $regex = '<link[^>]+rel=[''"]stylesheet[''"][^>]+href=[''"]([^''"]+)[''"][^>]*>'
-$matches = [regex]::Matches($content, $regex)
+$linkMatches = [regex]::Matches($content, $regex)
 
-Write-Host "Found $($matches.Count) matches."
+Write-Host "Found $($linkMatches.Count) matches."
 
-foreach ($match in $matches) {
+foreach ($match in $linkMatches) {
     $originalUrl = $match.Groups[1].Value
     $url = $originalUrl
     
@@ -30,7 +30,8 @@ foreach ($match in $matches) {
         Write-Host "Replacing $originalUrl with css/$fileName"
         # Use String.Replace which replaces all occurrences
         $newContent = $newContent.Replace($originalUrl, "css/$fileName")
-    } else {
+    }
+    else {
         Write-Host "Skipping $fileName (not found locally)"
     }
 }
